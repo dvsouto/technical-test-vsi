@@ -1,4 +1,4 @@
-# VSI Developer Test
+# VSI Technical Test
 Esse repositório contém as tarefas exigidas no teste técnico da VSI (Java).
 
 O repositório contém a implementação das tarefas para facilitar o entedimento. Basta rodar a classe ``Main`` para ver output das questões, e rodar os testes unitários na pasta ``test``.
