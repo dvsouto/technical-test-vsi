@@ -4,7 +4,7 @@ Esse repositório contém as tarefas exigidas no teste técnico da VSI (Java).
 O repositório contém a implementação das tarefas para facilitar o entedimento. Basta rodar a classe ``Main`` para ver output das questões, e rodar os testes unitários na pasta ``test``.
 
 
-### 1. Questão
+### 1. Question
 1. Write a Java program to solve the following problem:
    You are tasked with creating a utility function for a text-processing application. The
    function must generate all possible anagrams from a given group of distinct letters. For
@@ -19,7 +19,7 @@ O repositório contém a implementação das tarefas para facilitar o entediment
    including edge cases (e.g., input with a single letter or empty input).
 5. Document your code clearly, explaining the logic for generating anagrams.
 
-### 1. Resposta:
+### 1. Response:
 No pacote ``br.com.vsi.application.Anagram`` contém a implementação da funcionalidade de criar um anagrama.
 
 Todos os testes unitários das tarefas estão presentes na pasta ``test``.
@@ -295,6 +295,7 @@ analysis.
 
 ### 6. Response
 É necessário avaliar o caso em particular para entender onde está o gargalo do desempenho. Se for no banco de dados, é necessário avaliar as queries e seus meios de execução, já trabalhei em casos onde a falta de índice no banco estava causando extrema lentidão em determinadas consultas, e também em casos onde foi necessário reescrever queries que estavam sendo abstraidas pela ORM por queries escritas na mão, já que com a ORM o controle do que é executado no banco é fraco pela forte abstração as bibliotecas/frameworks.
+
 Se o gargalo for na transferência de arquivos, avaliaria a forma que essa transferencia está sendo efetuada. Uma forma eficiênte de melhorar o desempenho é utilizar serviços de filas como SQS para a transferir chunks de arquivos de forma assíncrona e controlada, utilizar serviços de cache como o Redis para consultas onde podem ser cacheadas e economizar o tempo que levaria em consultar o banco de dados, e comprimir os arquivos para reduzir a utilização da banda da rede.
 
 ---
